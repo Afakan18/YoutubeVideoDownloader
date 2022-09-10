@@ -16,6 +16,6 @@ def Downloader():
     url=YouTube(str(link.get()))
     video=url.streams.get_highest_resolution()
     video.download("G:\YAZILIM\Video İndir Pyhton")
-    Label(root,text="İndirildi!",font="arial 15").place(x=200,y=120)
+    Label(root,text="İndirildi!",font="arial 15").place(x=200,y=119)
 Button(root,text="İndir",font="arial 15 bold",bg="pale violet red",padx=2,command=Downloader).place(x=350,y=120)
 root.mainloop
