@@ -1,5 +1,5 @@
 from tkinter import *       # pip install SpeechRecognition 
-from pytube import YouTube    # pip install SpeechRecognition
+from pytube import YouTube    # pip install pytube
 
 root=Tk()
 screen_width = root.winfo_screenwidth()
@@ -16,6 +16,6 @@ def Downloader():
     url=YouTube(str(link.get()))
     video=url.streams.get_highest_resolution()
     video.download("G:\YAZILIM\Video İndir Pyhton")
-    Label(root,text="İndirildi!",font="arial 15").place(x=200,y=119)
+    Label(root,text="İndirildi!",font="arial 15").place(x=200,y=120)
 Button(root,text="İndir",font="arial 15 bold",bg="pale violet red",padx=2,command=Downloader).place(x=350,y=120)
 root.mainloop
