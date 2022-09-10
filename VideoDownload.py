@@ -19,3 +19,5 @@ def Downloader():
     Label(root,text="İndirildi!",font="arial 15").place(x=200,y=120)
 Button(root,text="İndir",font="arial 15 bold",bg="pale violet red",padx=2,command=Downloader).place(x=350,y=120)
 root.mainloop
+
+
