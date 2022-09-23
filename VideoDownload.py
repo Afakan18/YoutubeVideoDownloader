@@ -4,7 +4,7 @@ from pytube import YouTube    # pip install pytube
 root=Tk()
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
-root.geometry(f"500x200+{(1120//2)-100}+{(580//2)-100}")
+root.geometry(f"550x200+{(1120//2)-100}+{(580//2)-100}")
 root.resizable(600,600)
 root.title("Youtube Video İndir")
 
